@@ -132,5 +132,3 @@ router.get('/buynow', function (req, res) {
 
 // Exports
 module.exports = router;
-
-

@@ -87,5 +87,3 @@ router.get('/:category/:product', function (req, res) {
 
 // Exports
 module.exports = router;
-
-

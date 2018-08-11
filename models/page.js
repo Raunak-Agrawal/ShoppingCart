@@ -5,14 +5,17 @@ var PageSchema = mongoose.Schema({
    
     title: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     slug: {
-        type: String
+        type: String,
+        es_type: 'text'
     },
     content: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     sorting: {
         type: Number

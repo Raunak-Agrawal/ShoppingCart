@@ -5,10 +5,12 @@ var CategorySchema = mongoose.Schema({
    
     title: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     slug: {
-        type: String
+        type: String,
+        es_type: 'text'
     }
     
 });

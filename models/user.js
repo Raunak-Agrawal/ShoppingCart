@@ -5,24 +5,34 @@ var UserSchema = mongoose.Schema({
    
     name: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     email: {
         type: String,
         required: true,
+        es_type: 'text'
     },
     username: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        es_type: 'text'
     },
     admin: {
         type: Number
-    }
+    },
     
+    secretToken:{
+        type:String
+    },
+    active:{
+        type:Boolean
+    }
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);
